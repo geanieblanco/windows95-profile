@@ -1,0 +1,193 @@
+body {
+  background-color: #008081;
+  margin: 2em 0;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+body h1 {
+  grid-column: 1/span 8;
+  padding: 1em;
+}
+body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav.navbar-main,
+.navbar-footer {
+  position: absolute;
+  top: 0;
+}
+@media screen and (min-width: 1024px) {
+  nav.navbar-main,
+.navbar-footer {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+div.icons {
+  grid-row: 2;
+}
+div.icons ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 768px) {
+  div.icons ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+div.icons ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+div.icons ul li img {
+  max-height: 6em;
+}
+div.icons ul li p {
+  color: lightgray;
+  text-align: center;
+}
+
+div.container {
+  grid-row: 2;
+}
+@media screen and (min-width: 768px) {
+  div.container {
+    grid-column: 2/span 7;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div.container {
+    grid-column: 3/span 5;
+  }
+}
+
+.project-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (min-width: 600px) {
+  .project-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project-icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.project-icons li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-icons li a img {
+  width: 30%;
+  max-width: 7em;
+}
+
+@media screen and (min-width: 768px) {
+  .project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+}
+.project-details div:nth-of-type(2) {
+  margin-top: 1em;
+}
+@media screen and (min-width: 786px) {
+  .project-details div:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+.project-details__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-details__icons li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-details__icons li a img {
+  width: 30%;
+  max-width: 7em;
+}
+
+.contact-form__header {
+  background-color: #000181;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+}
+.contact-form .details p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.contact-form .details p button {
+  margin: 0 auto;
+}
+.contact-form .details input {
+  width: calc(100% - 5em);
+}
+.contact-form .details.hidden {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact-form .details.hidden {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form .message {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+.contact-form .message__body {
+  height: 7em;
+  background-color: white;
+  margin-bottom: 0.25em;
+}
+.contact-form .message input {
+  width: 100%;
+}
+.contact-form .message p {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-form .message {
+    grid-column: 2;
+  }
+  .contact-form .message__body {
+    height: 11em;
+  }
+}
+.contact-form .hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

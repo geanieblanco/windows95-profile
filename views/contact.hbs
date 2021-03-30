@@ -1,0 +1,36 @@
+<form 
+    name="contact"
+    method="POST"
+    netlify 
+    class="contact-form"
+    id="contact"
+    >
+    <div class="card details js-details-container">
+        <div class="contact-form__header">
+            <img src="/assets/icons/contact.png"/>
+            <h5>Send New Message</h5>
+        </div>
+        <div class="card-body">
+            <p>
+                <label>Name:&nbsp;&nbsp;</label>
+                <input type="text" name="name" />
+            </p>
+            <p>
+                <label>Email:&nbsp;&nbsp;</label>
+                <input type="email" name="email" />
+            </p>
+            <p>
+                <button class="btn-tertiary js-show-message">Next</button>
+            </p>
+        </div>
+    </div>
+    <div class="card message hidden js-message-container">
+        <div class="message__body"><p class="js-sent-message"></p></div>
+        <p>
+            <input type="text" name="message" placeholder="Type new message..."></input>
+        </p>
+        <p>
+            <button class="btn-tertiary js-send-message" type="submit">Send</button>
+        </p>
+    </div>
+</form>

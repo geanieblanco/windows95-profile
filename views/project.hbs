@@ -1,0 +1,30 @@
+<div class="project-details">
+    <div class="card card-tertiary">
+        <div class="card-header text-center"><span>{{data.title}}</span></div>
+        <div class="card-body bg-white">
+            <ul class="project-details__icons">
+                <li>
+                    <a href="#">
+                        <img src="/assets/icons/resume.png" />
+                        <p>Overview</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{data.link}}" target="__blank">
+                        <img src="/assets/icons/link.png" />
+                        <p>Link</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card card-tertiary">
+        <div class="card-header text-center"><span>Overview</span></div>
+        <div class="card-body bg-white">
+            <p class="lead">About</p>
+            <p>{{data.description}}</p>
+            <p class="lead">Technologies</p>
+            <p>{{data.technologies}}</p>
+        </div>
+    </div>
+</div>
